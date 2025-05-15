@@ -1,0 +1,18 @@
+<html>
+    <script>
+        function Persona (name, age) {
+            this.name = name
+            this.age = age
+        }
+
+        const a = new Persona("rodolfo", 29)
+
+        a.prototype.Walk = function () {
+            console.log('walking');
+            
+        }
+        console.log(a.name);
+        console.log(a.age);
+        
+    </script>
+</html>

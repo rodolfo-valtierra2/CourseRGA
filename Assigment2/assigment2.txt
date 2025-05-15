@@ -1,0 +1,2 @@
+Add a 7th step employee details empId, dessignation
+Add all the data in localstorages

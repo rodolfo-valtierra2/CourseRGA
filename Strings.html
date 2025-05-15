@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            const a = "ust";
+            
+            //console.log(a.split('').reverse().join(''));
+            function reverseString(str) {
+                for (let i = str.length - 1, j=0; i >= 0; i--, j++) {
+                    str[j] = str[i];
+                }
+                return str
+            }
+            console.log(reverseString(a));
+        </script>
+    </body>
+</html>

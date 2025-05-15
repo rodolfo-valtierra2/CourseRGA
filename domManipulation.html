@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <input name="gender" id="n1">
+        <input name="gender" id="n2">
+        <button id="add" onclick="load()">Add</button>
+        <button id="add" onclick="addField()">Add new field</button>
+        Result: <div id="result"></div>
+    </body>
+    <script>
+        const load = () =>{
+            let result;
+
+            result = document.querySelector('#n1').value
+            result += document.querySelector('#n2').value
+            document.querySelector('#result').innerHTML=result
+            console.log(result)
+            window.localStorage.setItem('sum', result);
+        }
+
+        const addField = () => {
+            const el = document.createElement("input")
+            document.querySelector('body').appendChild(el)
+        }
+    </script>
+</html>
