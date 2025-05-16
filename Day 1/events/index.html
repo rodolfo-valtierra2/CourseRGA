@@ -1,0 +1,23 @@
+<html>
+    <script>
+        function msgBody (event) {
+            console.log("body");
+            
+            event.stopPropagation();
+        }
+
+        function msgdiv (event) {
+            event.stopPropagation();
+            alert("hello from div")
+            console.log(event.pageX, event.pageY)
+            console.log(event.target);
+            
+        }
+    </script>
+    <body onclick="msgBody()">
+        
+        <div onclick="msgdiv(event)">
+            <button>Click</button>
+        </div>
+    </body>
+</html>

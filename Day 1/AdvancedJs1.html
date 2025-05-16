@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            var global = 1;
+            function foo () {
+                var local =2
+
+                for (let i=0; i<3; i++);
+                    console.log(i);
+
+            }
+
+            //block scope: is visible in certain parts of the code
+            console.log(local); //error 'cause the scope of local is only inside the function
+        </script>
+    </head>
+</html>

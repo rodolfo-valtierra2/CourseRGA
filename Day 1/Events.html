@@ -1,0 +1,13 @@
+<html>
+    <script>
+        function processCLick (event) {
+            console.log(event.target.name)
+            return 120 //any return value is lost
+        }
+    </script>
+    <body>
+        <div onclick="processCLick" name="text">THis is a div</div>
+        <button onclick="processCLick(event)" name="button1">button 1</button>
+        <button onclick="processCLick(event)" name="button2">button 2</button>
+    </body>
+</html>

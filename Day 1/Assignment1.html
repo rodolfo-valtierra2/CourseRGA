@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asssesment</title>
+</head>
+<body >
+    <div style="display: flex; flex-direction: column; width: 40%;">
+        <input type="text">
+        <input type="text">
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <input name="gender" type="radio">
+        <label for="gender">Male</label>
+        <input name="gender" type="radio">
+        <label for="gender">females</label>
+    </div>
+
+    <select onchange="selectCar(event)" defaultValue="Volvo">
+        <option value="Volvo">Volvo</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+    </select>
+</body>
+<script>
+    const selectCar = (event) => {
+        console.log(event)
+        let label = document.createElement("label")
+        label.innerHTML = event.target.value
+        document.querySelector("body").appendChild(label)
+        //event.target.label.innerHTML = event.target.value
+    }
+</script>
+</html>
