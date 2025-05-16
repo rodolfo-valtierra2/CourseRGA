@@ -63,129 +63,116 @@
                     <div class="check fas fa-check"></div>
                 </div>
             </div>
-            <div class=" ">
-                <form class="row " action="#">
-                    <div class="col card page slide-page ">
-                        <div class="card-title col title">Name:</div>
-                        <div class="card-body">
-                            <div class="row  justify-content-center mb-2">
-                                <div class="col-auto">First Name</div>
-                                <input class="col-auto form-controler" type="text" required />
-                            </div>
-                            <div class="row  justify-content-center">
-                                <div class="col-auto">Last Name</div>
-                                <input class="col-auto form-controler" type="text" required />
-                            </div>
-                        </div>
-                        <div class="card-footer ">
-                            <button data-bs-slide="next" class="btn btn-primary firstNext next">Next</button class="btn btn-primary">
-                        </div>
+            <div class=" card  page slide-page ">
+                <div class="card-title ">Name:</div>
+                <div class="card-body d-flex flex-column  ">
+                    <div class=" ">
+                        <input placeholder="First Name" class="form-control mb-2" type="text" required />
+                        <input placeholder="Last name" class=" form-control" type="text" required />
+                        <button data-bs-slide="next" class=" btn btn-primary firstNext next">Next</button class="btn btn-primary">
                     </div>
+                </div>
+                
+            </div>
 
-                    <div class="card col page visually-hidden">
-                        <div class="card-title">Contact:</div>
-                        <div class="card-body">
-                            <div class="row  justify-content-center mb-2">
-                            <div class="col-auto label">Email Address</div>
-                            <input class="col-auto" type="text" required />
-                        </div>
-                            <div class="row  justify-content-center mb-2">
-                            <div class="col-auto label">Phone Number</div>
-                            <input class="col-auto" type="Number" required />
-                        </div>
-                        <div class="field btns">
-                            <button class="btn btn-primary" class="prev-1 prev">Previous</button class="btn btn-primary">
-                            <button class="btn btn-primary" class="next-1 next">Next</button class="btn btn-primary">
-                        </div>
-                        </div>
-                        
+            <div class="card col page visually-hidden">
+                <div class="card-title">Contact:</div>
+                <div class="card-body">
+                    <div class="row  justify-content-center mb-2">
+                        <input placeholder="Email address" class="col" type="text" required />
+                        <input placeholder="Phone number" class="col" type="Number" required />
                     </div>
-                    <div class="col page visually-hidden">
-                        <div class="title">Birth:</div>
-                        <div class="field">
-                            <div class="label">Birthdate</div>
-                            <input type="date" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">Gender</div>
-                            <select required defaultValue="Male" >
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <div class="field btns">
-                            <button class="btn btn-primary" class="prev-2 prev">Previous</button class="btn btn-primary">
-                            <button class="btn btn-primary" class="next-2 next">Next</button class="btn btn-primary">
-                        </div>
+                    <div class="row">
+                        <button class="btn btn-primary" class="prev-1 prev">Previous</button class="btn btn-primary">
+                        <button class="btn btn-primary" class="next-1 next">Next</button class="btn btn-primary">
                     </div>
-                    <div class="col page carousel-item visually-hidden">
-                        <div class="title">Address:</div>
-                        <div class="field">
-                            <div class="label">Complete Address</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">Zip Code</div>
-                            <input type="Number" required />
-                        </div>
-                        <div class="field btns">
-                            <button class="btn btn-primary" class="prev-3 prev">Previous</button class="btn btn-primary">
-                            <button class="btn btn-primary" class="next-3 next">Next</button class="btn btn-primary">
-                        </div>
-                    </div>
+                </div>
+                
+            </div>
+            <div class="col page visually-hidden">
+                <div class="title">Birth:</div>
+                <div class="field">
+                    <div class="label">Birthdate</div>
+                    <input type="date" required />
+                </div>
+                <div class="field">
+                    <div class="label">Gender</div>
+                    <select required defaultValue="Male" >
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="field btns">
+                    <button class="btn btn-primary" class="prev-2 prev">Previous</button class="btn btn-primary">
+                    <button class="btn btn-primary" class="next-2 next">Next</button class="btn btn-primary">
+                </div>
+            </div>
+            <div class="col page carousel-item visually-hidden">
+                <div class="title">Address:</div>
+                <div class="field">
+                    <div class="label">Complete Address</div>
+                    <input type="text" required />
+                </div>
+                <div class="field">
+                    <div class="label">Zip Code</div>
+                    <input type="Number" required />
+                </div>
+                <div class="field btns">
+                    <button class="btn btn-primary" class="prev-3 prev">Previous</button class="btn btn-primary">
+                    <button class="btn btn-primary" class="next-3 next">Next</button class="btn btn-primary">
+                </div>
+            </div>
 
-                    <div class="col page carousel-item visually-hidden">
-                        <div class="title">Social Media:</div>
-                        <div class="field">
-                            <div class="label">Facebook Link</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">LinkedIn Link</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field btns">
-                            <button class="btn btn-primary" class="prev-4 prev">Previous</button class="btn btn-primary">
-                            <button class="btn btn-primary" class="next-4 next">Next</button class="btn btn-primary">
-                        </div>
-                    </div>
-                    <div class="col page carousel-item visually-hidden">
-                        <div class="title">Employee details:</div>
-                        <div class="field">
-                            <div class="label">Employee id</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">Dessignation</div>
-                            <select defaultValue="1">
-                                <option value="1">fullstack programing</option>
-                                <option value="2">HR (Human resources)</option>
-                                <option value="3">Accountant</option>
-                                <option value="4">It networks</option>
-                            </select>
-                        </div>
-                        <div class="field btns">
-                            <button class="btn btn-primary" class="prev-5 prev">Previous</button class="btn btn-primary">
-                            <button class="btn btn-primary" class="next-5 next">Next</button class="btn btn-primary">
-                        </div>
-                    </div>
-                    <div class="col page carousel-item visually-hidden">
-                        <div class="title">Login Details:</div>
-                        <div class="field">
-                            <div class="label">Username</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">Password</div>
-                            <input type="password" required />
-                        </div>
-                        <div class="field btns">
-                            <button class="btn btn-primary" class="prev-6 prev">Previous</button class="btn btn-primary">
-                            <button class="btn btn-primary" class="submit">Submit</button class="btn btn-primary">
-                        </div>
-                    </div>
-                </form>
+            <div class="col page carousel-item visually-hidden">
+                <div class="title">Social Media:</div>
+                <div class="field">
+                    <div class="label">Facebook Link</div>
+                    <input type="text" required />
+                </div>
+                <div class="field">
+                    <div class="label">LinkedIn Link</div>
+                    <input type="text" required />
+                </div>
+                <div class="field btns">
+                    <button class="btn btn-primary" class="prev-4 prev">Previous</button class="btn btn-primary">
+                    <button class="btn btn-primary" class="next-4 next">Next</button class="btn btn-primary">
+                </div>
+            </div>
+            <div class="col page carousel-item visually-hidden">
+                <div class="title">Employee details:</div>
+                <div class="field">
+                    <div class="label">Employee id</div>
+                    <input type="text" required />
+                </div>
+                <div class="field">
+                    <div class="label">Dessignation</div>
+                    <select defaultValue="1">
+                        <option value="1">fullstack programing</option>
+                        <option value="2">HR (Human resources)</option>
+                        <option value="3">Accountant</option>
+                        <option value="4">It networks</option>
+                    </select>
+                </div>
+                <div class="field btns">
+                    <button class="btn btn-primary" class="prev-5 prev">Previous</button class="btn btn-primary">
+                    <button class="btn btn-primary" class="next-5 next">Next</button class="btn btn-primary">
+                </div>
+            </div>
+            <div class="col page carousel-item visually-hidden">
+                <div class="title">Login Details:</div>
+                <div class="field">
+                    <div class="label">Username</div>
+                    <input type="text" required />
+                </div>
+                <div class="field">
+                    <div class="label">Password</div>
+                    <input type="password" required />
+                </div>
+                <div class="field btns">
+                    <button class="btn btn-primary" class="prev-6 prev">Previous</button class="btn btn-primary">
+                    <button class="btn btn-primary" class="submit">Submit</button class="btn btn-primary">
+                </div>
             </div>
         </div>
         <script async src="script.js"></script>

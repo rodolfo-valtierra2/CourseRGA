@@ -5,17 +5,46 @@
 <script src="posts.js"></script>
     </header>
     <body class="container">
-        <div class="flex flex-col mt-5">
-            <div class="col">
+        <div class="row mt-5">
+            <div class="col-6">
                 <div class="row">
-                    <div class="col-6">
-                        <input id="name" placeholder="worker name" class="form-control" type="text">
+                    <input id="" hidden type="text">
+                    <div class="col-4">
+                        <input id="name" onchange="setDataWorker(e)" placeholder="first name" class="form-control" type="text">
                     </div>
-                    <button onclick="addTask()" class="col-auto btn btn-primary"">Add worker</button>
+                    <div class="col-4">
+                        <input id="lastName" onchange="setDataWorker(e)" placeholder="last name" class="form-control" type="text">
+                    </div>
+                    <div class="col-4">
+                        <input id="age" onchange="setDataWorker(e)" placeholder="age" class="form-control" type="number">
+                    </div>
+                    <div class="col-4">
+                        <input id="job" onchange="setDataWorker(e)" placeholder="job" class="form-control" type="text">
+                    </div>
                 </div>
+                
+                <button id="savebtn" onclick="addWorker()" class="col-auto btn btn-primary"">Add worker</button>
             </div>
-            <div class=" content  mt-3">
-            </div>
+            <table class="table content  mt-3">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Last name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Job</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="1">
+                        <td>a</td>
+                        <td>x</td>
+                        <td>e</td>
+                        <td>i</td>
+                        <td>X</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </body>
 </html>
