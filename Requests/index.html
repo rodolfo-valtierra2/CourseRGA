@@ -6,43 +6,36 @@
     </header>
     <body class="container">
         <div class="row mt-5">
-            <div class="col-6">
-                <div class="row">
-                    <input id="" hidden type="text">
-                    <div class="col-4">
-                        <input id="name" onchange="setDataWorker(e)" placeholder="first name" class="form-control" type="text">
+                <h2>Worker Book</h2>
+                <div class="row justify-content-around gap-2">
+                    <div class="col-5">
+                        <input id="name" onchange="setDataWorker(event)" placeholder="first name" class="form-control" type="text">
                     </div>
-                    <div class="col-4">
-                        <input id="lastName" onchange="setDataWorker(e)" placeholder="last name" class="form-control" type="text">
+                    <div class="col-5">
+                        <input id="lastName" onchange="setDataWorker(event)" placeholder="last name" class="form-control" type="text">
                     </div>
-                    <div class="col-4">
-                        <input id="age" onchange="setDataWorker(e)" placeholder="age" class="form-control" type="number">
+                    <div class="col-5">
+                        <input id="age" onchange="setDataWorker(event)" placeholder="age" class="form-control" type="number">
                     </div>
-                    <div class="col-4">
-                        <input id="job" onchange="setDataWorker(e)" placeholder="job" class="form-control" type="text">
+                    <div class="col-5">
+                        <input id="job" onchange="setDataWorker(event)" placeholder="job" class="form-control" type="text">
                     </div>
                 </div>
-                
-                <button id="savebtn" onclick="addWorker()" class="col-auto btn btn-primary"">Add worker</button>
-            </div>
-            <table class="table content  mt-3">
+                <div class="mt-2">
+                    <button id="savebtn" onclick="addWorker()" class="col-auto btn btn-primary"">Add worker</button>
+                    <button id="cancelbtn" hidden onclick="cancelBtn()" class="col-auto btn btn-danger"">Cancel</button>
+                </div>
+            <table class="table content  mt-3 text-center">
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
                         <th scope="col">Last name</th>
                         <th scope="col">Age</th>
                         <th scope="col">Job</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr id="1">
-                        <td>a</td>
-                        <td>x</td>
-                        <td>e</td>
-                        <td>i</td>
-                        <td>X</td>
-                    </tr>
                 </tbody>
             </table>
         </div>
