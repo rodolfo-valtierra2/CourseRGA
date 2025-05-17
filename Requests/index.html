@@ -5,26 +5,31 @@
 <script src="posts.js"></script>
     </header>
     <body class="container">
-        <div class="row mt-5">
-                <h2>Worker Book</h2>
-                <div class="row justify-content-around gap-2">
-                    <div class="col-5">
-                        <input id="name" onchange="setDataWorker(event)" placeholder="first name" class="form-control" type="text">
-                    </div>
-                    <div class="col-5">
-                        <input id="lastName" onchange="setDataWorker(event)" placeholder="last name" class="form-control" type="text">
-                    </div>
-                    <div class="col-5">
-                        <input id="age" onchange="setDataWorker(event)" placeholder="age" class="form-control" type="number">
-                    </div>
-                    <div class="col-5">
-                        <input id="job" onchange="setDataWorker(event)" placeholder="job" class="form-control" type="text">
-                    </div>
-                </div>
-                <div class="mt-2">
-                    <button id="savebtn" onclick="addWorker()" class="col-auto btn btn-primary"">Add worker</button>
-                    <button id="cancelbtn" hidden onclick="cancelBtn()" class="col-auto btn btn-danger"">Cancel</button>
-                </div>
+        <div class="row mt-5 justify-content-around">
+						<h2>Worker Book</h2>
+						<div class="col-12">
+							<div class="col row justify-content-around gap-2">
+									<div class="col-4">
+											<input id="name" onchange="setDataWorker(event)" placeholder="first name" class="form-control" type="text">
+									</div>
+									<div class="col-4">
+											<input id="lastName" onchange="setDataWorker(event)" placeholder="last name" class="form-control" type="text">
+									</div>
+									<div class="col-4">
+											<input id="age" onchange="setDataWorker(event)" placeholder="age" class="form-control" type="number">
+									</div>
+									<div class="col-4">
+											<input id="job" onchange="setDataWorker(event)" placeholder="job" class="form-control" type="text">
+									</div>
+							</div>
+						</div>
+						<div class="col-4 mt-2">
+								<button id="savebtn" onclick="addWorker()" class="col-auto btn btn-primary"">Add worker</button>
+								<button id="cancelbtn" hidden onclick="cancelBtn()" class="col-auto btn btn-danger"">Cancel</button>
+						</div>
+						<div class="col-5 mt-3">
+							<input class="form-control shadow" placeholder="Search" type="search"/>
+						</div>
             <table class="table content  mt-3 text-center">
                 <thead>
                     <tr>
